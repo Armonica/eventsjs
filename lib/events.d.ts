@@ -37,6 +37,6 @@ export declare class EventEmitter implements IEventEmitter, Destroyable {
     _executeListener(func: Events[], args?: any[]): void;
     listenTo(obj: IEventEmitter, event: string, fn: EventHandler, ctx?: any, once?: boolean): any;
     listenToOnce(obj: IEventEmitter, event: string, fn: EventHandler, ctx?: any): any;
-    stopListening(obj?: IEventEmitter, event?: string, callback?: EventHandler): EventEmitter;
+    stopListening(obj?: IEventEmitter, event?: string, callback?: EventHandler): this;
     destroy(): void;
 }

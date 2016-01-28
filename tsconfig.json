@@ -1,25 +1,22 @@
 {
     "version": "1.5.3",
     "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
+        "target": "es6",
         "isolatedModules": false,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "declaration": true,
         "noImplicitAny": false,
-        "removeComments": false,
+        "removeComments": true,
         "noLib": false,
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true,
-        "outDir": "./lib"
+        "rootDir": "./src"
     },
-    "filesGlob": [
-        "./src/*.ts",
-        "./**/*.tsx",
-        "!./node_modules/**/*"
+    "exclude": [
+        "node_modules"
     ],
     "files": [
-        
+        "./src/events.ts"
     ]
 }
